@@ -11,7 +11,11 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define USART3_BAUD_RATE(BAUD_RATE) ((float)(F_CPU * 64 / (16 *(float)BAUD_RATE)) + 0.5) // Define baud rate of USART3
+// Define delete in ASCII character code
+#define DELETE 127
+
+// Define baud rate of USART3
+#define USART3_BAUD_RATE(BAUD_RATE) ((float)(F_CPU * 64 / (16 *(float)BAUD_RATE)) + 0.5)
 
 /*
 * Function: USART3_initialize

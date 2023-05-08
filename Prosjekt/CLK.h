@@ -8,10 +8,12 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-#define RTC_INTERRUPT_PERIODE 0x258 // 10 minutes (600 seconds)
+// 10 minutes (600 seconds)
+#define RTC_INTERRUPT_PERIODE 0x258
 
-#define MINIMUM_TEMPERATURE_VALUE 15 // Value where fans ar set to 0
-#define MAXIMUM_TEMPERATURE_VALUE 35 // Value where fans ar set to 100
+// Temperatures where fans are set to 0 or 100
+#define MINIMUM_TEMPERATURE_VALUE 15
+#define MAXIMUM_TEMPERATURE_VALUE 35
 
 /*
 * Interrupt Service Routine

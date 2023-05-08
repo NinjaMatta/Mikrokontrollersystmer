@@ -5,7 +5,8 @@
 
 #include <avr/io.h>
 
-#define TREND_DATA_SIZE 10 // Define amount of trend data to be stored in EEPROM
+// Define amount of trend data to be stored in EEPROM
+#define TREND_DATA_SIZE 10
 
 // Define a start address for each of the eight fans
 #define FAN_0_START_ADDRESS (0*TREND_DATA_SIZE)
@@ -17,9 +18,11 @@
 #define FAN_6_START_ADDRESS (6*TREND_DATA_SIZE)
 #define FAN_7_START_ADDRESS (7*TREND_DATA_SIZE)
 
-#define ITERATION_ADDRESS (8*TREND_DATA_SIZE) // Define an address for storing iteration number in EEPROM
+// Define an address for storing iteration number in EEPROM
+#define ITERATION_ADDRESS (8*TREND_DATA_SIZE)
 
-#define RPM_TO_SIZE_OF_BYTE 52 // Variable used to adjust the size of fan speed to fit in one byte
+// Variable used to adjust the size of fan speed to fit in one byte
+#define RPM_TO_SIZE_OF_BYTE 52
 
 /*
 * Function: EEPROM_read

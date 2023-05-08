@@ -5,11 +5,15 @@
 
 #include <avr/io.h>
 
-#define F_CPU 16000000UL // Define clock frequency of CPU
+// Define clock frequency of CPU
+#define F_CPU 16000000UL
 #include "util/delay.h"
 
-#define FAN_FREQUENCY 25000 // Define frequency of San Ace 40
-#define PWM_PERIOD_VALUE (F_CPU/(2*FAN_FREQUENCY)) // Define calculated PWM period
+// Define frequency of San Ace 40
+#define FAN_FREQUENCY 25000
+
+// Define calculated PWM period
+#define PWM_PERIOD_VALUE (F_CPU/(2*FAN_FREQUENCY))
 
 /*
 * Function: increase_fan_speed_first
